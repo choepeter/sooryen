@@ -21,7 +21,7 @@ public class CraigsListProject {
 			for(Element item : items){
 				Item it = new Item(CraigsListExtractor.getText(item, "hdrlnk"), CraigsListExtractor.getText(item, "price"));
 				CraigsListIndexer.indexItem(it);
-				//CraigsListIndexer.insertToDatabase(it);
+				CraigsListIndexer.insertToDatabase(it);
 			}
 		}
 
